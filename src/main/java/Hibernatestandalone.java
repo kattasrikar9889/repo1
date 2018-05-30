@@ -17,7 +17,7 @@ public class Hibernatestandalone {
 		student.setAddress(address);
 		session.save(student);
 		session.getTransaction().commit();
-		List<Student> students =(List<Student>) session.createQuery("from student").list();
+		List<Student> students =(List<Student>) session.createQuery("from -----student").list();
 			students.forEach(System.out::println);
 			session.close();
 	}
